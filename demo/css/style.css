@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 980px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 40px 20px 40px;
+    min-height: 200px;
+    background: rgba(166, 166, 166, 0.25);
+    border: 1px solid;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.title {
+    font-size: 21px;
+    color: #000000;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+
+dl {
+    margin: 0 0 10px 0;
+}
+
+dt {
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    padding: 10px 0;
+}
+
+dd {
+    display: inline-block;
+}
+
+.txt {
+    width: 350px;
+    max-width: 100%;
+    font-size: 13px;
+    padding: 11px 10px;
+    border-radius: 5px;
+    border: 1px solid #bfbfbf;
+    outline: none;
+    background: #FFF;
+}
+
+.checkbox {
+    font-weight: normal !important;
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.checkbox input {
+    float: left;
+    margin: 1px 5px 0 0;
+}
+
+.txt.required {
+    border: 1px solid #ff9090;
+}
+
+.rqMessage {
+    display: block;
+    font-size: 12px;
+    margin: 5px 0 0 5px;
+    color: #ff4949;
+}

@@ -1,0 +1,118 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pure Js Form Validator</title>
+
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript" src="../js/pure-js-form-validator.js" lang="javascript"></script>
+</head>
+<body>
+<div class="container">
+    <h1 class="title">Pure Js Form Validator</h1>
+    <form class="form" method="post">
+        <dl>
+            <dt><label>Title</label></dt>
+            <dd><input type="text" class="txt" rqType="noUrl" ></dd>
+        </dl>
+        <dl>
+            <dt><label>Name</label></dt>
+            <dd>
+                <input type="text" class="txt" rq="true" rqType="name" >
+            </dd>
+        </dl>
+
+        <dl>
+            <dt><label>Category</label></dt>
+            <dd>
+                <select class="txt" size="6" rq="true">
+                    <option value="">Please Choose</option>
+                    <option value="Mail">Mail</option>
+                    <option value="SMS">SMS</option>
+                </select>
+            </dd>
+        </dl>
+        <dl>
+            <dt><label>Surname</label></dt>
+            <dd><input type="text" class="txt" rq="true" rqType="name"></dd>
+        </dl>
+        <dl>
+            <dt><label>E-Mail</label></dt>
+            <dd><input type="text" class="txt" rq="true" rqType="mail"></dd>
+        </dl>
+        <dl>
+            <dt><label>User Name</label></dt>
+            <dd><input type="text" class="txt" rq="true" rqType="userName"></dd>
+        </dl>
+        <dl>
+            <dt><label>Phone</label></dt>
+            <dd><input type="text" class="txt" rq="true" rqType="tel"></dd>
+        </dl>
+        <dl>
+            <dt><label>Bhirt Date</label></dt>
+            <dd><input type="text" class="txt" rq="true" rqType="date"></dd>
+        </dl>
+        <dl>
+            <dt><label>Height</label></dt>
+            <dd><input type="text" class="txt" rq="true" rqType="number"></dd>
+        </dl>
+        <dl>
+            <dt><label>Kilos</label></dt>
+            <dd><input type="text" class="txt" rq="true" rqType="number"></dd>
+        </dl>
+        <dl>
+            <dt><label>Web Adress</label></dt>
+            <dd><input type="text" class="txt" rq="true" rqType="url"></dd>
+        </dl>
+        <dl>
+            <dt><label>Languages</label></dt>
+            <dd>
+                <checkbox rq="true">
+                    <label class="checkbox"><input type="checkbox" name="lang[]" value="English" >English</label><br>
+                    <label class="checkbox"><input type="checkbox" name="lang[]" value="French" >French</label><br>
+                    <label class="checkbox"><input type="checkbox" name="lang[]" value="German" >German</label>
+                </checkbox>
+            </dd>
+        </dl>
+        <dl>
+            <dt><label>Military Status</label></dt>
+            <dd>
+                <radio rq="true">
+                    <label class="checkbox"><input type="radio" name="Done" value="Done" >Done</label><br>
+                    <label class="checkbox"><input type="radio" name="Postponed" value="Postponed" >Postponed</label><br>
+                    <label class="checkbox"><input type="radio" name="Exempt" value="Exempt" >Exempt</label>
+                </radio>
+            </dd>
+        </dl>
+        <dl>
+            <dt><label>Contact Road</label></dt>
+            <dd>
+                <select class="txt" rq="true">
+                    <option value="">Please Choose</option>
+                    <option value="Mail">Mail</option>
+                    <option value="SMS">SMS</option>
+                </select>
+            </dd>
+        </dl>
+        <dl>
+            <dt><label>Description</label></dt>
+            <dd><textarea class="txt txtarea" rq="true"></textarea></dd>
+        </dl>
+        <dl>
+            <dt></dt>
+            <dd><button type="submit">Gönder</button></dd>
+        </dl>
+    </form>
+
+    <script>
+        pureJsFormValidator(document.querySelector('.form'),{
+            requiredText: 'Empty can not pass',
+            invalidText: 'Invalid format'
+        })
+    </script>
+</div>
+</body>
+</html>
