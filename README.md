@@ -6,14 +6,14 @@ Form validates and displays errors
 npm i pure-js-form-validator
 ```
 
-### How to use
+## How to use
 You must include the script on the page
 ```html
 <script type="text/javascript" src="../js/pure-js-form-validator.js" lang="javascript"></script
 ```
 You can do this with any web packaging tool. For example Grunt, Gulp.
 
-##### Null control
+#### Null control
 The relevant element is given a null control by giving ```rq="true"``` attribute.
 ```html
 <form>
@@ -26,7 +26,7 @@ The relevant element is given a null control by giving ```rq="true"``` attribute
 </script>
 ```
 
-##### Mask Control
+#### Mask Control
 The corresponding element is masked by giving ```rqType="mail"``` attribute. Other masking options are below.
 * E-Mail = ```mail```
 * Phone = ```tel```
@@ -48,7 +48,7 @@ The corresponding element is masked by giving ```rqType="mail"``` attribute. Oth
 ```
 You can also use it in different masks.
 
-##### Warning Messages
+#### Warning Messages
 You can change warning messages to be displayed on the screen
 ```html
 <form>
@@ -64,7 +64,7 @@ You can change warning messages to be displayed on the screen
 </script>
 ```
 
-##### Custom warning message
+#### Custom warning message
 You can give input a special warning message.
 * Required text = ```requiredText=""```
 * Invalid required text = ```requiredTextInvalid=""```
@@ -80,7 +80,7 @@ You can give input a special warning message.
 ```
 
 
-##### Warning Class
+#### Warning Class
 You can change the classes of the corresponding HTML elements in case of incorrect input
 ```html
 <form>
@@ -96,7 +96,7 @@ You can change the classes of the corresponding HTML elements in case of incorre
 </script>
 ```
 
-##### New Mask
+#### New Mask
 You can define new masks.
 ```html
 <form>
@@ -113,7 +113,7 @@ You can define new masks.
 
 ### Use with other inputs
 
-##### Selectbox
+#### Selectbox
 ```html
 <select rq="true">
     <option value="">Please Choose</option>
@@ -122,7 +122,7 @@ You can define new masks.
 </select>
 ```
 
-##### Checkbox
+#### Checkbox
 ```html
 <checkbox rq="true">
     <input type="checkbox" name="lang[]" value="Turkish" >
@@ -130,7 +130,7 @@ You can define new masks.
 </checkbox>
 ```
 
-##### Radio
+#### Radio
 ```html
 <radio rq="true">
     <input type="radio" name="Turkish" value="Turkish" >
@@ -138,7 +138,7 @@ You can define new masks.
 </radio>
 ```
 
-##### Textarea
+#### Textarea
 ```html
 <textarea rq="true"></textarea>
 ```
