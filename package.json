@@ -1,6 +1,6 @@
 {
   "name": "pure-js-form-validator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Form validates and displays errors",
   "main": "index.js",
   "scripts": {
